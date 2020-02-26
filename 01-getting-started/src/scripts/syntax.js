@@ -1,8 +1,29 @@
 // define attributes / variables
 // number
-function IsAnumber(number){
-    return true
-}
+
+
+const syntax = {
+
+    isAnumber: (num) => {
+        return(typeof num === 'number')
+    },
+
+    isItHello: (str) => {
+        return (str === "Hello")
+    },
+
+    andLogicCheck: (a,b) => {
+
+        if (a&&b !==true && a&&b !==false){
+            var c = "Invalid Input";
+          } else {
+            var c = (a&&b);
+          }
+        return c;      
+    },
+};
+
+export default syntax;
 
 // string
 // boolean
