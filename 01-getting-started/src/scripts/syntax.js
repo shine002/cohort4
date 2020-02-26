@@ -1,33 +1,80 @@
+
+
 // define attributes / variables
 // number
-function IsAnumber(number){
-    return true
-}
+const syntax = {
+    numberTest: (num) => {
+        return (typeof num == 'number');
+    },
 
-// string
-// boolean
-// array
-// dictionary / objects
-// undefined
+    helloStringCheck: (str) => {
+        return (str == "Hello");       
+    },
 
-// sample if / else
+    andLogicCheck: (a,b) => {
+        return (a&&b);
+    }
 
-// functions
-// parameters
-// returns
 
-// arrays
-// add to the front
-// add to the end
-// update values
-// loops 
+};
 
-// for
-// for/in
-// while
-// do while
-// forEach (with array and function)
 
-// Objects / Dictionaries
-// declare object
-// lookup key to retrieve value
+export default syntax;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //     // string
+    //     stringTest: (str) => {
+    //     return true;
+    //     },
+    //     booleanTest: (value) => {
+    //         return true;
+    //     },
+    // };
+
+
+
+    // boolean
+    // array
+    // dictionary / objects
+    // undefined
+
+    // sample if / else
+
+    // functions
+    // parameters
+    // returns
+
+    // arrays
+    // add to the front
+    // add to the end
+    // update values
+    // loops 
+
+    // for
+    // for/in
+    // while
+    // do while
+    // forEach (with array and function)
+
+    // Objects / Dictionaries
+    // declare object
+    // lookup key to retrieve value
+
