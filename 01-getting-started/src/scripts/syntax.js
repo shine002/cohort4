@@ -1,8 +1,5 @@
-
-
 // define attributes / variables
 // number
-<<<<<<< HEAD
 
 
 const syntax = {
@@ -15,7 +12,7 @@ const syntax = {
         return (str === "Hello")
     },
 
-    andLogicCheck: (a,b) => {
+    ANDlogicCheck: (a,b) => {
 
         if (a&&b !==true && a&&b !==false){
             var c = "Invalid Input";
@@ -24,12 +21,18 @@ const syntax = {
           }
         return c;      
     },
+
+    arrayIndexCheck: (arry) => {
+        return arry[1];
+        // return res;
+    },
+
+
 };
 
 export default syntax;
 
-// string
-// boolean
+
 // array
 // dictionary / objects
 // undefined
@@ -55,81 +58,3 @@ export default syntax;
 // Objects / Dictionaries
 // declare object
 // lookup key to retrieve value
-=======
-const syntax = {
-    numberTest: (num) => {
-        return (typeof num == 'number');
-    },
-
-    helloStringCheck: (str) => {
-        return (str == "Hello");       
-    },
-
-    andLogicCheck: (a,b) => {
-        return (a&&b);
-    }
-
-
-};
-
-
-export default syntax;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //     // string
-    //     stringTest: (str) => {
-    //     return true;
-    //     },
-    //     booleanTest: (value) => {
-    //         return true;
-    //     },
-    // };
-
-
-
-    // boolean
-    // array
-    // dictionary / objects
-    // undefined
-
-    // sample if / else
-
-    // functions
-    // parameters
-    // returns
-
-    // arrays
-    // add to the front
-    // add to the end
-    // update values
-    // loops 
-
-    // for
-    // for/in
-    // while
-    // do while
-    // forEach (with array and function)
-
-    // Objects / Dictionaries
-    // declare object
-    // lookup key to retrieve value
-
->>>>>>> 8e60b86615cefcb914aa482938cc3ee980acdccb
