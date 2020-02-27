@@ -21,6 +21,10 @@ test('Test valid AND i/o', () => {
 test('1st index check of an array', () => {
     expect(syntax.arrayIndexCheck([1,2,3,4,5,6,7])).toBe(2);
     expect(syntax.arrayIndexCheck(["cat","dog","deer","lion"])).toBe("dog");
+});
 
+test('Person age out put', () => {
+    expect(syntax.personAgeCheck({firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"})).toBe(50);
+    expect(syntax.personAgeCheck({firstName:"shine", age:30})).toBe(30);
 
 });

@@ -27,6 +27,12 @@ const syntax = {
         // return res;
     },
 
+    personAgeCheck: (obj) => {
+        var person = obj;
+        return person.age;
+          
+    },
+
 
 };
 
