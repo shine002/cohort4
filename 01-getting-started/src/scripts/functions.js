@@ -1,4 +1,9 @@
 
+var num1 = document.getElementById("num1").value
+var num2 = document.getElementById("num2").value
+
+
+
 const functions = {
     
     // size: (num) => {
@@ -28,10 +33,7 @@ const functions = {
     },
     divide: (num1, num2) => {
         return (num1 / num2);
-    },
-
-    
-    
+    },   
 };
 
 export default functions;
