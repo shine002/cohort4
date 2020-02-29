@@ -2,7 +2,7 @@
 
 body {
     background: rgb(130,194,195);
-background: linear-gradient(90deg, rgba(130,194,195,1) 35%, rgba(0,171,255,1) 100%);
+    background: linear-gradient(90deg, rgba(130,194,195,1) 35%, rgba(0,171,255,1) 100%);
 }
 
 div{    
@@ -20,21 +20,18 @@ button{
     border: none;
     font-size: 35px;
     border-radius: 10px;
-    transition: transform .2s;
-    
+    transition: transform .1s;
 }
 
 button:active{
-    background-color: rgb(140, 140, 207);
     transform: scale(1.1);
-
 }
 
 input{
     margin: 10px;
     padding: 5px; 
     font-size: 45px;
-    transition: transform .5s;
+    transition: transform .3s;
     border-style: solid;
     border-color:rgb(255, 255, 255);
     border-width: 10px;
