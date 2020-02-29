@@ -19,7 +19,7 @@ button{
 }
 
 button:active{
-    background-color: rgb(89, 65, 221);
+    background-color: rgb(140, 140, 207);
     transform: scale(1.1);
 
 }
