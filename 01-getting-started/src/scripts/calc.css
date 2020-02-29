@@ -1,4 +1,10 @@
 
+
+body {
+    background: rgb(130,194,195);
+background: linear-gradient(90deg, rgba(130,194,195,1) 35%, rgba(0,171,255,1) 100%);
+}
+
 div{    
     margin-top: 100px;      
 }
@@ -10,7 +16,7 @@ div, input, button {
 
 button{
     padding: 50px;
-    background-color:rgb(160, 160, 211);
+    background-color:rgb(245, 245, 245);
     border: none;
     font-size: 35px;
     border-radius: 10px;
@@ -30,8 +36,9 @@ input{
     font-size: 45px;
     transition: transform .5s;
     border-style: solid;
-    border-color:rgb(160, 160, 211);
+    border-color:rgb(255, 255, 255);
     border-width: 10px;
+    border-radius: 10px;
    }
 input:hover{
     transform: scale(1.1);
