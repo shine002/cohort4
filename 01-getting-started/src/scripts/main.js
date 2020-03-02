@@ -10,7 +10,7 @@ import tax from './tax.js'
 //     idNumberSize.textContent = functions.size(idNumber.value);
 // }));
 
-// Calculator
+// Calculator**********************************************************************************************************************************************
 
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
@@ -38,14 +38,15 @@ btnDiv.addEventListener("click",function() {
      result1.value  = functions.divide(num1.value,num2.value);
 });
 
-// Canada Tax
+// Canada Tax.***********************************************************************************************************************************
 
 let num = document.getElementById("input");
 let button = document.getElementById("button");
+let result = document.getElementById("result");
 
 
 button.addEventListener("click",function() {
-    document.getElementById("result").value = tax.taxCalculator(num.value);
-    
+    result.value = tax.taxCalculator(num.value);    
 })
 
+//************************************************************************************************************************************************** */
