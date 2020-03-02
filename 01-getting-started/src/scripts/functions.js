@@ -16,6 +16,7 @@ const functions = {
 
 // Calulator Part
     
+    
     add: (num1, num2) => {
         var result = parseInt(num1) +  parseInt(num2);
         equal.value = result;
@@ -49,6 +50,8 @@ var btnSub = document.getElementById("btnSub");
 var btnMul = document.getElementById("btnMultiply");
 var btnDiv = document.getElementById("btnDivide");
 var equal = document.getElementById("result");
+
+
 
 
 btnAdd.addEventListener("click",function() {

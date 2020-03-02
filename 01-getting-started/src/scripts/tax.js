@@ -1,3 +1,10 @@
+var input = document.getElementById("input");
+var button = document.getElementById("button");
+
+button.addEventListener("click",function() {
+    console.log("works");
+});
+
 
 const tax = {
 
@@ -9,4 +16,4 @@ const tax = {
 
 };
 
-export default tax;
+// export default tax;
