@@ -18,25 +18,25 @@ const functions = {
     
     add: (num1, num2) => {
         var result = parseInt(num1) +  parseInt(num2);
-        document.getElementById("result").value = result;
+        equal.value = result;
         return result;
     },
 
     subtract: (num1, num2) => {
         var result = parseInt(num1) - parseInt(num2);
-        document.getElementById("result").value = result;
+        equal.value = result;
         return result;
     },
 
     multiply: (num1, num2) => {
         var result = parseInt(num1) * parseInt(num2);
-        document.getElementById("result").value = result;
+        equal.value = result;
         return result;
     },
     
     divide: (num1, num2) => {
         var result = parseInt(num1) / parseInt(num2);
-        document.getElementById("result").value = result;
+        equal.value = result;
     },   
 };
 
@@ -44,23 +44,28 @@ const functions = {
 
 var num1 = document.getElementById("num1");
 var num2 = document.getElementById("num2");
+var btnAdd = document.getElementById("btnAdd");
+var btnSub = document.getElementById("btnSub");
+var btnMul = document.getElementById("btnMultiply");
+var btnDiv = document.getElementById("btnDivide");
+var equal = document.getElementById("result");
 
 
-document.getElementById("btnAdd").addEventListener("click",function() {
+btnAdd.addEventListener("click",function() {
     functions.add(num1.value,num2.value);
 });
 
-document.getElementById("btnSub").addEventListener("click",function() {
+btnSub.addEventListener("click",function() {
     functions.subtract(num1.value,num2.value);
 });
     
 
-document.getElementById("btnMultiply").addEventListener("click",function() {
+btnMul.addEventListener("click",function() {
     functions.multiply(num1.value,num2.value);
 });
 
 
-document.getElementById("btnDivide").addEventListener("click",function() {
+btnDiv.addEventListener("click",function() {
     functions.divide(num1.value,num2.value);
 });
 
