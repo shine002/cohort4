@@ -76,3 +76,34 @@ html {
         min-height: 400px;
     }
 }
+
+button {
+    padding: 25px;
+    background-color:rgb(255, 255, 255);
+    border: solid;
+    border-color: rgb(78, 78, 78);
+    font-size: 40em;
+    border-radius: 10px;
+    transition: transform .1s;
+}
+button:active{
+    transform: scale(1.1);
+}
+
+input{
+    margin: 20px;
+    padding: 10px;  
+    font-size: 45px;
+    transition: transform .3s;
+    border-style: solid; 
+    border-color:rgb(78, 78, 78);
+    /* border-width: 10px; */
+    border-radius: 20px;
+   }
+input:hover{
+    transform: scale(1.1);
+}
+
+input, button {
+    text-align: center;
+}
