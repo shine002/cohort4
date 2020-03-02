@@ -1,5 +1,9 @@
 var input = document.getElementById("input");
 var button = document.getElementById("button");
+var result = document.getElementById("result");
+
+result.nodeValue(h3).appendChild("hi");
+
 
 button.addEventListener("click",function() {
     console.log("works");
