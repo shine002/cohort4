@@ -1,14 +1,13 @@
 let a = 48535;  //first tax slab
-let b = 48534;  //second  tax bracet
-let c = 53404;  //third  tax bracet
-let d = 63895;  //forth  tax bracet
+let b = 48534;  //second  tax bracket
+let c = 53404;  //third  tax bracket
+let d = 63895;  //forth  tax bracket
 
 const tax = {
 
     taxCalculator: (num) => {   
         if (num <= 48535){
-            return (num*15/100).toFixed(2);
-                  
+            return (num*15/100).toFixed(2);                  
 
         }    
              
