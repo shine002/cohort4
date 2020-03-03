@@ -28,3 +28,21 @@ test('Person age out put', () => {
     expect(syntax.personAgeCheck({firstName:"shine", age:30})).toBe(30);
 
 });
+
+test('undefined check', () => {
+    expect(syntax.undefinedCheck(5)).toBe(false);
+	expect(syntax.undefinedCheck(undefined)).toBe(true);
+
+});
+
+test("Add value to array test", () => {
+    expect(syntax.addToEach([0, 1, 2, 3, 4], 1)).toEqual([1, 2, 3, 4, 5]);
+    expect(syntax.addToEach([11, 15, 31, 35, 56], 5)).toEqual([16, 20, 36, 40, 61]);
+    expect(syntax.addToEach([100, 200, 3, 55], 21)).toEqual([121, 221, 24, 76]);
+});
+
+test("Upper case test ", () => {
+    expect(syntax.toUpperCaseArray(['shine', 'swajal', 'nicki'])).toEqual(['SHINE', 'SWAJAL', 'NICKI']);
+    expect(syntax.toUpperCaseArray(['luke', 'kim', 'phil'])).toEqual(['LUKE', 'KIM', 'PHIL']);
+});
+

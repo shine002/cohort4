@@ -1,7 +1,6 @@
-// define attributes / variables
+
+
 // number
-
-
 const syntax = {
 
     isAnumber: (num) => {
@@ -11,6 +10,8 @@ const syntax = {
     isItHello: (str) => {
         return (str === "Hello")
     },
+// sample if / else// parameters// functions// returns//boolean
+
 
     ANDlogicCheck: (a,b) => {
 
@@ -21,17 +22,40 @@ const syntax = {
           }
         return c;      
     },
-
+// array
     arrayIndexCheck: (arry) => {
         return arry[1];
         // return res;
     },
-
+// dictionary / objects
     personAgeCheck: (obj) => {
         var person = obj;
         return person.age;
           
     },
+// undefined
+    undefinedCheck: (input) => {
+		if (typeof input == "undefined"){
+			return true;
+		}
+		return false;
+    },
+    
+    addToEach: (arr, num) => {
+        let i;
+        for (i = 0; i < arr.length; i++) {
+            arr[i] += num;
+        }
+        return arr;
+    },
+    
+    toUpperCaseArray: (array) => {
+        array.forEach((x, i) => {
+            array[i] = x.toUpperCase();
+        });
+        return array;
+    },
+
 
 
 };
@@ -39,15 +63,15 @@ const syntax = {
 export default syntax;
 
 
-// array
-// dictionary / objects
-// undefined
 
-// sample if / else
 
-// functions
-// parameters
-// returns
+
+
+
+
+
+
+
 
 // arrays
 // add to the front
