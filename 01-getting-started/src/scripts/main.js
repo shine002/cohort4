@@ -49,4 +49,8 @@ button.addEventListener("click",function() {
     result.value = tax.taxCalculator(num.value);    
 })
 
-//************************************************************************************************************************************************** */
+//Array************************************************************************************************************************************************** */
+
+// let num = document.getElementById("input");
+// let button = document.getElementById("button");
+// let result = document.getElementById("result");
