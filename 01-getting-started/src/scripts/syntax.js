@@ -23,7 +23,7 @@ const syntax = {
         return c;      
     },
 // array
-    arrayIndexCheck: (arry) => {
+    arrayIndexCheck: (arry) => {// while
         return arry[1];
         // return res;
     },
@@ -93,11 +93,5 @@ export default syntax;
 
 
 
-
-
-
-// add to the front
-// add to the end
-// update values
-// for/in
+// while
 // lookup key to retrieve value
