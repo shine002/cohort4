@@ -27,7 +27,7 @@ const syntax = {
         return arry[1];
         // return res;
     },
-// dictionary / objects
+// dictionary / objects// Objects / Dictionaries
     personAgeCheck: (obj) => {
         var person = obj;
         return person.age;
@@ -40,7 +40,8 @@ const syntax = {
 		}
 		return false;
     },
-    
+
+    // loops // for
     addToEach: (arr, num) => {
         let i;
         for (i = 0; i < arr.length; i++) {
@@ -48,12 +49,33 @@ const syntax = {
         }
         return arr;
     },
-    
+
+// forEach (with array and function)
+
     toUpperCaseArray: (array) => {
         array.forEach((x, i) => {
             array[i] = x.toUpperCase();
         });
         return array;
+    },
+// while
+    fillArray: (size) => {
+        let arr = [];
+        let i = 0;
+        while (i < size) {
+            arr.push(i);
+            i++;
+        }
+        return arr;
+    },
+// do while
+    reduce: (size) => {
+        let total = 0, i = 0;
+        do {
+            total += i;
+            i++;
+        } while (i <= size)
+        return total;;
     },
 
 
@@ -73,18 +95,9 @@ export default syntax;
 
 
 
-// arrays
+
 // add to the front
 // add to the end
 // update values
-// loops 
-
-// for
 // for/in
-// while
-// do while
-// forEach (with array and function)
-
-// Objects / Dictionaries
-// declare object
 // lookup key to retrieve value
