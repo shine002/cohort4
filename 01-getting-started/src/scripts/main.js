@@ -1,5 +1,6 @@
-import functions from './functions.js';
+import functions from './functions.js'
 import tax from './tax.js'
+import array from './array.js'
 
 // **********
 //
@@ -51,6 +52,29 @@ button.addEventListener("click",function() {
 
 //Array************************************************************************************************************************************************** */
 
-// let num = document.getElementById("input");
-// let button = document.getElementById("button");
-// let result = document.getElementById("result");
+let element = document.getElementById("element");
+let total = document.getElementById("total");
+let add = document.getElementById("add");
+let show = document.getElementById("show");
+let clear = document.getElementById("clear");
+let output = document.getElementById("output");
+
+
+add.addEventListener("click",function() {
+     output.innerHTML = array.createArray(element.value); 
+     element.value ="";  
+ })
+
+clear.addEventListener("click",function() {
+     output.innerHTML = array.clearArray();    
+ })
+
+ show.addEventListener("click",function() {
+     output.innerHTML = array.showArray();    
+ })
+ 
+ total.addEventListener("click",function() {
+     output.innerHTML = array.addArray();    
+ })
+ 
+ 
