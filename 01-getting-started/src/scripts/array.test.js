@@ -1,9 +1,8 @@
 import array from "./array.js"
 
 
-test('array check', () => {
-    expect(array.createArray("test")).toEqual("Invalid Input");
-    
+test('Array test', () => {
+    expect(array.createArray("test")).toEqual("Invalid Input");    
     expect(array.createArray(5)).toEqual("Input added");
     expect(array.createArray(2)).toEqual("Input added");
     expect(array.createArray("test")).toEqual("Invalid Input");
@@ -14,6 +13,8 @@ test('array check', () => {
     expect(array.showArray()).toEqual("Array is Empty");
     expect(array.createArray(9)).toEqual("Input added");
     expect(array.createArray(4)).toEqual("Input added");
-    expect(array.showArray()).toEqual([9,4]);
+    expect(array.createArray(4)).toEqual("Input added");
+    expect(array.showArray()).toEqual([9,4,4]);
+    expect(array.addArray()).toEqual(17);
 
 });
