@@ -4,34 +4,32 @@
 
 let arr = [];
 
-const array  = {
-    
+const array = {
+
 
     createArray: (value) => {
-        
 
-        if ((isNaN(value) == true) || (value =="")){
-            return "Invalid Input"; 
+        if ((isNaN(value) == true) || (value == "")) {
+            return "Invalid Input";
         }
-        else {            
-            arr.push(value);            
-            return "Input added";                    
-        }       
-        
+        else {
+            arr.push(value);
+            return "Input Added";
+        }
     },
 
-    addArray: () => {
-        return (arr.reduce((a, b) => a + +b, 0))        
+    addArray: (value) => {
+        return (arr.reduce((a, b) => a + +b, 0))
     },
-    showArray: () => {
-        if (arr==""){
-        return "Array is Empty";
-        }else {
-        return arr; 
+    showArray: (value) => {
+        if (arr == "") {
+            return "Array is Empty";
+        } else {
+            return arr;
         }
-    }, 
+    },
 
-    clearArray: () => {
+    clearArray: (value) => {
         arr = [];
         return "Array Cleared"
     },
