@@ -1,6 +1,7 @@
 import functions from './functions.js'
 import tax from './tax.js'
 import array from './array.js'
+import obj from './object.js'
 
 // **********
 //
@@ -77,4 +78,13 @@ clear.addEventListener("click",function() {
      output.innerHTML = array.addArray();    
  })
  
- 
+ //Object Dicionaires*************************************************
+
+let pCode = document.getElementById("pCode");
+let search = document.getElementById("search");
+let pName = document.getElementById("pName");
+
+
+search.addEventListener("click",function() {
+     pName.value = obj.searchObj(pCode.value);    
+})

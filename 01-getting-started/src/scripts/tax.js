@@ -12,7 +12,7 @@ const tax = {
         }    
              
         else if (num>48535 && num<=97069){
-            return ((a*15/100) + (num-a)*20.5/100).toFixed(2);
+            return ((a*.15) + (num-a)*20.5/100).toFixed(2);
             
         }    
         
