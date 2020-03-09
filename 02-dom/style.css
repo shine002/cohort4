@@ -1,7 +1,7 @@
 body {
     background-color: rgb(195, 235, 233);
 }
-ol {
+ol,h1,p {
     margin-left: 40px;
 }
 
@@ -9,20 +9,21 @@ div {
 
     border: solid;
     border-color: black;
-    font-family: fantasy;
-    font-size: xx-large;
+    font-family: monospace;
+    font-size: large;
    
 }
 
 
 input, button{
 
-    margin: 20px;
+    margin: 40px;
     border: solid;
-    padding: 15px 40px;
+    padding: 5px 20px;
     background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
-    font-size: 15px;
+    
+    text-align: center;
     border-radius: 10px;
     transition: transform .1s;
     
@@ -32,9 +33,7 @@ button:active{
     transform: scale(1.1);
 }
 
-#div {
-
-
-
+input {
+  margin-left: 40px;
 
 }
