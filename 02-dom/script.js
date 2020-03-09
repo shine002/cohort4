@@ -14,11 +14,7 @@ addListElement = () => {
     ol.appendChild(li);
     input.value="";
     }
-    else{
-        window.alert("Input Blank")
-    }
-
-}
+   }
 
 delListElement = () =>{
     
@@ -27,14 +23,14 @@ delListElement = () =>{
 }
 
 add.addEventListener("click", function (){
-    console.log("add");
-addListElement()
+    // console.log("add");
+    addListElement()
 });
 
 
 del.addEventListener("click", function (){
     
-    console.log("remove");
+    // console.log("remove");
     delListElement()
 });
 
@@ -55,6 +51,6 @@ function showHide() // no ';' here
 
 
 show.addEventListener("click", function (){
-    console.log("dsdsd");
+    // console.log("dsdsd");
     showHide()
 });
