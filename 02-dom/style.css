@@ -1,6 +1,9 @@
 body {
     background-color: rgb(195, 235, 233);
 }
+ol {
+    margin-left: 40px;
+}
 
 div {
 
