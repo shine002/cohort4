@@ -2,7 +2,7 @@ body {
     background-color: rgb(195, 235, 233);
 }
 ol,h1,p {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 div {
@@ -17,7 +17,7 @@ div {
 
 input, button{
 
-    margin: 40px;
+    margin: 10px;
     border: solid;
     padding: 5px 20px;
     background-color: rgb(255, 255, 255);
@@ -33,7 +33,3 @@ button:active{
     transform: scale(1.1);
 }
 
-input {
-  margin-left: 40px;
-
-}
