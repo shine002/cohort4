@@ -12,17 +12,26 @@ div {
 }
 
 
-button{
+input, button{
 
-    margin: 1rem;    
+    margin: 20px;
     border: solid;
+    padding: 15px 40px;
     background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
-    font-size: 1em;
+    font-size: 15px;
     border-radius: 10px;
     transition: transform .1s;
+    
 }
 
 button:active{
     transform: scale(1.1);
+}
+
+#div {
+
+
+
+
 }

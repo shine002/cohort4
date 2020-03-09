@@ -1,29 +1,60 @@
-<<<<<<< HEAD
-var show = document.getElementById("show");
-=======
 let add = document.getElementById("add");
+let del = document.getElementById("del");
+
 let ol = document.querySelector("ol");
-let show = document.getElementById("show");
-let li = document.createElement("li");
+
+
 
 addListElement = () => {
-
-li.appendChild(document.createTextNode("Testing"));
-}
-
-
-showElement = () => {
+    let input = document.getElementById("input");
+    if (input.value !== ""){
+    let li = document.createElement("li");    
+    let textnode = document.createTextNode(input.value);
+    li.appendChild(textnode);
     ol.appendChild(li);
+    input.value="";
+    }
+    else{
+        window.alert("Input Blank")
+    }
+
 }
 
+delListElement = () =>{
+    
+    let li = document.querySelector("li");   
+    ol.removeChild(li);
+}
 
 add.addEventListener("click", function (){
     console.log("add");
 addListElement()
 });
 
-show.addEventListener("click", function (){
-    console.log("show");
-    showElement()
+
+del.addEventListener("click", function (){
+    
+    console.log("remove");
+    delListElement()
 });
->>>>>>> 392e75d8cd948fdb72effdbe3624ab9613685fe4
+
+
+function showHide() // no ';' here
+{
+    let show = document.getElementById("show");
+    let x = document.getElementById('ol');
+    if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible'; 
+    show.innerHTML="Hide";   
+    }
+    else {
+    x.style.visibility = 'hidden';
+    show.innerHTML="Show";  
+    }
+}
+
+
+show.addEventListener("click", function (){
+    console.log("dsdsd");
+    showHide()
+});
