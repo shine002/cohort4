@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+#panel {
+    display: inline-block;
+    background-color: grey;
+    width: 750px; 
+    text-align: center;
+    margin-left: px;
+}
