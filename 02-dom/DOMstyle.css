@@ -1,12 +1,13 @@
-body{
-    background-color: rgb(255, 255, 255);
+div {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
 }
 
-
-#panel {
-    display: inline-block;
-    background-color: grey;
-    width: 750px; 
-    text-align: center;
-    margin-left: px;
+div :empty {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
