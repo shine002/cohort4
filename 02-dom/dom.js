@@ -13,11 +13,11 @@ buildCard = (text) => {
     div.appendChild(document.createTextNode(text));
 
     const add = document.createElement('button');
-    add.appendChild(document.createTextNode("Add"));
+    add.appendChild(document.createTextNode("Add Before"));
     div.appendChild(add);
 
     const before = document.createElement('button');
-    before.appendChild(document.createTextNode("Before"));
+    before.appendChild(document.createTextNode("Add After"));
     div.appendChild(before);
 
     const del = document.createElement('button');
