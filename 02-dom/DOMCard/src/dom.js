@@ -3,7 +3,7 @@ import domfuncs from './domfunc.js'
 
 console.log(idButton);
 
-let counter = 0;
+let counter = 1;
 
 document.body.addEventListener("click", e => {
     // console.log("You Clicked, at your command");
@@ -14,14 +14,17 @@ document.body.addEventListener("click", e => {
     if (e.target.nodeName === 'BUTTON') {
         // document.body.appendChild(domfuncs.buildCard("You just added " + counter++));
         console.log(e.target.textContent);
-        if (e.target.textContent === "Before") {
+        if (e.target.textContent === "Add Before") {
             domfuncs.addBefore(e.target.parentElement, "You just added " + counter++);
         }
-        
+        if (e.target.textContent === "Add After") {
+            domfuncs.addAfter(e.target.parentElement, "You just added " + counter++);
+        }
+
     }
 
-    
-    
+
+
 
     // const div = document.createElement("div");
     // div.className = "clCard";
@@ -32,7 +35,7 @@ document.body.addEventListener("click", e => {
 
 })
 
-console.log(idStuff2);
+
 
 
 
