@@ -1,4 +1,4 @@
-import domfuncs from './dom.js'
+import functions from './dom.js'
 
 console.log(idButton);
 
@@ -14,7 +14,7 @@ document.body.addEventListener("click", e => {
         // document.body.appendChild(domfuncs.buildCard("You just added " + counter++));
         console.log(e.target.textContent);
         if (e.target.textContent === "Add After") {
-            domfuncs.addBefore(e.target.parentElement, "You just added " + counter++);
+            functions.addBefore(e.target.parentElement, "You just added " + counter++);
         }
         
     }
