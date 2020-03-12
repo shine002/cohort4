@@ -33,7 +33,11 @@ const functions = {
     addAfter (node, text) {
 
         const div = functions.buildCard(text);
-        node.addAfter.insertBefore(div,node.nextSibiling);
+        node.after(div, node.nextSibling);
+    },
+
+    delCard(node){
+        node.parentElement.removeChild(node);
     },
     
 };

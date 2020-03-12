@@ -21,6 +21,12 @@ document.body.addEventListener("click", e => {
             domfuncs.addAfter(e.target.parentElement, "You just added " + counter++);
         }
 
+        if (e.target.textContent === "Delete") {
+            domfuncs.delCard(e.target.parentElement);
+        }
+
+
+
     }
 
 
