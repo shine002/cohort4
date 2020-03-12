@@ -33,7 +33,7 @@ const functions = {
     addAfter (node, text) {
 
         const div = functions.buildCard(text);
-        node.parentElement.insertBefore(div,text);
+        node.addAfter.insertBefore(div,node.nextSibiling);
     },
     
 };

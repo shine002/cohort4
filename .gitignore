@@ -6,6 +6,7 @@
 
 */coverage
 */node_modules
+*/02-dom/DOMCard/node_modules
 
 # testing
 */coverage
