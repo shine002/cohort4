@@ -1,10 +1,12 @@
 
 const functions = {
 
-    buildCard (text) {
+    buildCard(text) {
 
         const div = document.createElement('div');
         div.appendChild(document.createTextNode(text));
+        div.appendChild(document.createElement('br'));
+        div.appendChild(document.createElement('br'));
 
         const add = document.createElement('button');
         add.appendChild(document.createTextNode("Add After"));
@@ -13,6 +15,8 @@ const functions = {
         const before = document.createElement('button');
         before.appendChild(document.createTextNode("Add Before"));
         div.appendChild(before);
+        div.appendChild(document.createElement('br'));
+        div.appendChild(document.createElement('br'));
 
         const del = document.createElement('button');
         del.appendChild(document.createTextNode("Delete"));
@@ -22,24 +26,20 @@ const functions = {
     },
 
     addBefore(node, text) {
-        // console.log(node);
-        // console.log(node.parentElement);
-        
-        
         const div = functions.buildCard(text);
-        node.parentElement.insertBefore(div,node);
+        node.parentElement.insertBefore(div, node);
     },
 
-    addAfter (node, text) {
+    addAfter(node, text) {
 
         const div = functions.buildCard(text);
         node.after(div, node.nextSibling);
     },
 
-    delCard(node){
+    delCard(node) {
         node.parentElement.removeChild(node);
     },
-    
+
 };
 
 export default functions;

@@ -2,8 +2,6 @@ import domfuncs from './domfunc'
 
 
 test('Does the dom functions work?', () => {
-    // expect(functions.add(1,2)).toBe(3);
-    // expect(functions.add(101,202)).toBe(303);
     console.log("We are in the tests");
     const element = domfuncs.buildCard();
     expect(element).toBeTruthy();
@@ -11,14 +9,11 @@ test('Does the dom functions work?', () => {
 
 
 test('Does the addBefore functions work?', () => {
-    // expect(functions.add(1,2)).toBe(3);
-    // expect(functions.add(101,202)).toBe(303);
+
     const group = document.createElement("div");
     const element = domfuncs.buildCard("First Insert");
     group.appendChild(element);
-    // console.log(group);
-    // console.log(group.children);
-    // console.log(element.parentElement);
+ 
     
     expect(group.children.length).toBe(1);
 
