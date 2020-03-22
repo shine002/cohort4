@@ -1,3 +1,6 @@
+
+
+
 let aName = document.getElementById("aName"); //account name
 let iAmount = document.getElementById("iAmount"); //initial amount
 let addAccBtn = document.getElementById("addAccBtn"); //account add button
@@ -13,3 +16,9 @@ console.log(addAccBtn);
 console.log(tAmount);
 console.log(withdraw);
 console.log(deposit);
+
+
+addAccBtn.addEventListener("click", function(){
+    console.log(iAmount.value);
+    console.log(aName.value);
+})
