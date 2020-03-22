@@ -1,4 +1,4 @@
-
+import { Account } from './object.js'
 
 
 let aName = document.getElementById("aName"); //account name
