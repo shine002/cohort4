@@ -1,4 +1,4 @@
-class Account {
+export class Account {
 
     constructor(accountName, initialBalance){
         this.accountName = accountName;
@@ -21,4 +21,3 @@ class Account {
 
 }
 
-export { Account } ;

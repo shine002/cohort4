@@ -1,4 +1,4 @@
-import { Account } from './object.js'
+import account from './object'
 
 
 let aName = document.getElementById("aName"); //account name
