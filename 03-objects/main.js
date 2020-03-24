@@ -1,4 +1,4 @@
-// import account from './object'
+import { Account } from './object.js'
 
 
 let aName = document.getElementById("aName"); //account name
@@ -10,15 +10,17 @@ let deposit = document.getElementById("deposit"); // deposit button
 
 
 
-console.log(aName);
-console.log(iAmount);
-console.log(addAccBtn);
-console.log(tAmount);
-console.log(withdraw);
-console.log(deposit);
+// console.log(aName);
+// console.log(iAmount);
+// console.log(addAccBtn);
+// console.log(tAmount);
+// console.log(withdraw);
+// console.log(deposit);
 
 
 addAccBtn.addEventListener("click", function(){
-    console.log(iAmount.value);
-    console.log(aName.value);
+
+    Account(aName.value , iAmount.value);
+    console.log(Account);
+    
 })
