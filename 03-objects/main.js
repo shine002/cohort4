@@ -1,4 +1,4 @@
-import account from './object'
+// import account from './object'
 
 
 let aName = document.getElementById("aName"); //account name
