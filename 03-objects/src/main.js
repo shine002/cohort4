@@ -32,12 +32,12 @@ let deposit = document.getElementById("deposit"); // deposit button
 
 
 
-console.log(aName);
-console.log(iAmount);
-console.log(addAccBtn);
-console.log(tAmount);
-console.log(withdraw);
-console.log(deposit);
+// console.log(aName);
+// console.log(iAmount);
+// console.log(addAccBtn);
+// console.log(tAmount);
+// console.log(withdraw);
+// console.log(deposit);
 
 
 addAccBtn.addEventListener("click", e => {
