@@ -16,10 +16,10 @@ export class Account {
     }
 
     balance(){
-        return this.currentBalance;
+        return this.accountName +  this.currentBalance;
     }
 
 }
 
 
-// let chqAccount = new Account("Chq",23);
+let chqAccount = new Account("Chq",23).balance();

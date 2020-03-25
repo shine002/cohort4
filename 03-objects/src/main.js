@@ -1,4 +1,26 @@
-import { Account } from './object.js'
+// import { Account } from './object.js'
+class Account {
+
+    constructor(accountName, initialBalance){
+        this.accountName = accountName;
+        this.initialBalance = initialBalance;
+
+    }
+    deposit(amount){
+
+        initialBalance = this.initialBalance + amount;
+    }
+
+    withdraw(amount) {
+        initialBalance = this.initialBalance - amount;
+
+    }
+
+    balance(){
+        return this.accountName + this.initialBalance;
+    }
+
+}
 
 
 let aName = document.getElementById("aName"); //account name
@@ -10,17 +32,22 @@ let deposit = document.getElementById("deposit"); // deposit button
 
 
 
-// console.log(aName);
-// console.log(iAmount);
-// console.log(addAccBtn);
-// console.log(tAmount);
-// console.log(withdraw);
-// console.log(deposit);
+console.log(aName);
+console.log(iAmount);
+console.log(addAccBtn);
+console.log(tAmount);
+console.log(withdraw);
+console.log(deposit);
 
 
-addAccBtn.addEventListener("click", function(){
-
-    let chqAccount = new Account("Chq",23).balance();
-    console.log(chqAccount);
+addAccBtn.addEventListener("click", e => {
     
+    console.log(aName.value);
+    console.log(iAmount.value);
+
+     
+    let nc = new Account(aName.value,iAmount.value).balance();
+    console.log(nc);
+    
+
 })
