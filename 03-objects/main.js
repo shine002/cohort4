@@ -20,7 +20,7 @@ let deposit = document.getElementById("deposit"); // deposit button
 
 addAccBtn.addEventListener("click", function(){
 
-    Account(aName.value , iAmount.value);
-    console.log(Account);
+    let chqAccount = new Account("Chq",23).balance();
+    console.log(chqAccount);
     
 })
