@@ -8,6 +8,7 @@
 */node_modules
 cohort4/02-dom/DOMList/node_modules
 cohort4/02-dom/DOMCard/node_modules
+cohort4/03-objects/node_modules
 
 # testing
 */coverage
