@@ -7,7 +7,7 @@ let addAccBtn = document.getElementById("addAccBtn"); //account add button
 let tAmount = document.getElementById("tAmount"); // transcation withdrawal and add amount
 let withdraw = document.getElementById("withdraw"); //Withdraw button
 let deposit = document.getElementById("deposit"); // deposit button
-
+let demo = document.getElementById("demo");
 console.log(aName);
 console.log(iAmount);
 console.log(addAccBtn);
@@ -18,7 +18,14 @@ console.log(deposit);
 addAccBtn.addEventListener("click", e => {
   console.log(aName.value);
   console.log(iAmount.value);
+  let ac = aName.value;
+  let ia = iAmount.value;
 
-  let nc = new oop.Account(aName.value, iAmount.value).balance();
-  console.log(nc);
+  ac = new oop.Account(ac, ia);
+  console.log(ac.amount);
+  console.log(ac.accountName);
+  let h = document.createElement("H3");
+  let t = document.createTextNode(`${ac.accountName}   : $ ${ac.amount} `);
+  h.appendChild(t);
+  demo.appendChild(h);
 });
