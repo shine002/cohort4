@@ -1,4 +1,4 @@
-class Account {
+export class Account {
   constructor(accountName, initialBalance) {
     this.accountName = accountName;
     this.initialBalance = initialBalance;
@@ -12,12 +12,13 @@ class Account {
   }
 
   balance() {
-    return this.currentBalance; 
+    return this.currentBalance 
   }
 
   aName() {
+
     return this.accountName;
   }
 }
 
-export default {Account};
+// let chqAccount = new Account("Chq",23);
