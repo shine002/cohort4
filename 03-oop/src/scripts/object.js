@@ -4,15 +4,15 @@ class Account {
     this.initialBalance = initialBalance;
   }
   deposit(amount) {
-    currentBalance = this.initialBalance + amount;
+    return this.initialBalance + amount;
   }
 
   withdraw(amount) {
-    currentBalance = this.initialBalance - amount;
+    return this.initialBalance - amount;
   }
 
   balance() {
-    return this.currentBalance; 
+    return this.initialBalance; 
   }
 
   aName() {
