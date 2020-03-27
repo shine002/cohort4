@@ -1,13 +1,14 @@
-import {Account} from './oop.js'
+import oop from "./oop.js";
 
-test ('Test OOP Class ',() => {
+test("Test OOP Class ", () => {
+  // let newAcc = new account("newACC", 56);
 
-    // let newAcc = new account("newACC", 56);
+  console.log(oop.Account);
+  let newac = new oop.Account("shine", 56);
+  console.log(newac);
 
-    console.log(Account);
-    let newac = new Account("shine",56);
-    console.log(newac);
-    newac.withdraw(34);
-    console.log(newac.balance());
-
+  console.log(newac.withdraw(34));
+  console.log(newac.accountName);
+  console.log(newac.amount);
+  
 });

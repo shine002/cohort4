@@ -1,24 +1,19 @@
-export class Account {
-  constructor(accountName, initialBalance) {
+class Account {
+  constructor(accountName, amount) {
     this.accountName = accountName;
-    this.initialBalance = initialBalance;
+    this.amount = amount;
+ 
   }
-  deposit(amount) {
-    currentBalance = this.initialBalance + amount;
-  }
-
-  withdraw(amount) {
-    currentBalance = this.initialBalance - amount;
+  deposit(tAmount) {
+    this.amount =  this.amount + tAmount;
+    return this.amount;
   }
 
-  balance() {
-    return this.currentBalance 
-  }
-
-  aName() {
-
-    return this.accountName;
+  withdraw(tAmount) {
+    this.amount = this.amount - tAmount;
+    return this.amount;
   }
 }
 
-// let chqAccount = new Account("Chq",23);
+
+export default {Account};
