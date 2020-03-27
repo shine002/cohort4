@@ -2,17 +2,20 @@ class Account {
   constructor(accountName, initialBalance) {
     this.accountName = accountName;
     this.initialBalance = initialBalance;
+ 
   }
   deposit(amount) {
-    return this.initialBalance + amount;
+    let currentBalance =  this.initialBalance + amount;
+    return currentBalance;
   }
 
   withdraw(amount) {
-    return this.initialBalance - amount;
+    let currentBalance = this.initialBalance - amount;
+    return currentBalance;
   }
 
   balance() {
-    return this.initialBalance; 
+    return this.currentBalance; 
   }
 
   aName() {
