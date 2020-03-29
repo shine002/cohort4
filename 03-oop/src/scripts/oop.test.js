@@ -12,3 +12,9 @@ test("Test OOP Class ", () => {
   console.log(newac.amount);
   
 });
+
+test('Account class function check', () => {
+  expect(oop.Account("shine", 56)).toBe("accountName: 'shine', amount: 56");
+  expect(fahrenheit.convertToFahrenheit(0)).toBe(32);
+
+});
