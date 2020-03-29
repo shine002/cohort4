@@ -7,7 +7,7 @@ let addAccBtn = document.getElementById("addAccBtn"); //account add button
 let tAmount = document.getElementById("tAmount"); // transcation withdrawal and add amount
 let withdraw = document.getElementById("withdraw"); //Withdraw button
 let deposit = document.getElementById("deposit"); // deposit button
-let demo = document.getElementById("demo");
+let demo = document.getElementById("demo"); // Display demo
 console.log(aName);
 console.log(iAmount);
 console.log(addAccBtn);
