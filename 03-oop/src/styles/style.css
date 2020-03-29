@@ -42,5 +42,11 @@ input {
 }
 
 #demo {
-  border: solid;
+  margin: 0px auto;
+  border:solid;
+    /* text-align: left; */
+    width: 50%;
+    /* zoom: 1; */
+    /* position: relative; */
+
 }
