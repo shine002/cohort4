@@ -1,4 +1,4 @@
-import oop from "./oop.js";
+import {Account,AccountController} from "./oop.js";
 
 
 let aName = document.getElementById("aName"); //account name
@@ -21,7 +21,7 @@ addAccBtn.addEventListener("click", e => {
   let ac = aName.value;
   let ia = iAmount.value;
 
-  ac = new oop.Account(ac, ia);
+  ac = new AccountController(ac, ia);
   console.log(ac.amount);
   console.log(ac.accountName);
   let h = document.createElement("H3");
