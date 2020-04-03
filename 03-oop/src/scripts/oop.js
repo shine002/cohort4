@@ -25,23 +25,7 @@ export class AccountController {
   }
 }
 
-//   removeAccount (name){
-//       //iterate through the array that contains all the acocunts, then look at the values of the objects, if the object contains the given name, remove that object.
-//       let toBeDeletedPos;        
-//       for (let i=0;i<this.accountArr.length;i++){
-//           // console.log(Object.values(this.accountArr[i]));
-//           let val = Object.values(this.accountArr[i]); 
-//           // console.log(val);
-//           // console.log(name + "from account");
-//           // console.log(val.includes(name))                               
-//           if (val.includes(name)) {
-//               toBeDeletedPos= i;
-//               this.accountArr.splice(toBeDeletedPos,1);
-//           } else {
-//               console.log("error");
-//           }
-//       }
-//   }
+
 //   renameAccount (name,newName) {
 //   // iterate through all accounts in the account array for the 'name' account. Give this account the newName.
 //       for (let i=0;i<this.accountArr.length;i++){
